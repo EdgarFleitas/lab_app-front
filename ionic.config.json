@@ -1,0 +1,7 @@
+{
+  "name": "Edgar_App",
+  "integrations": {
+    "capacitor": {}
+  },
+  "type": "angular"
+}
