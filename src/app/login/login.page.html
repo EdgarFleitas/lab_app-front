@@ -1,0 +1,50 @@
+<ion-header>
+  <!-- <ion-toolbar>
+    <ion-title>login</ion-title>
+  </ion-toolbar> -->
+
+  <ion-toolbar color="dark">
+    <ion-buttons slot="start">
+    
+  
+    </ion-buttons>
+    <ion-title>Iniciar Sesion</ion-title>
+  </ion-toolbar>
+  
+</ion-header>
+
+<ion-content>
+
+  <br>
+
+  <ion-item>
+    <ion-label position="floating">USUARIO</ion-label>
+    <ion-input></ion-input>
+  </ion-item>
+
+  <ion-item>
+    <ion-label position="floating">CONTRASEÑA</ion-label>
+    <ion-input></ion-input>
+  </ion-item>
+
+  <br>
+
+  <ion-button expand="block" [routerLink]="['/principal']">INICIAR SESION</ion-button>
+
+  <ion-toolbar>
+    <ion-buttons slot="start">
+      <ion-button color="danger" [routerLink]="['/recuperar-contra']">
+        Recuperar Cuenta
+      </ion-button>
+    </ion-buttons>
+    <ion-buttons slot="primary">
+      <ion-button [routerLink]="['/registro-usuario']">
+        Crear Cuenta
+      </ion-button>
+    </ion-buttons>
+    
+  </ion-toolbar>
+  
+
+
+</ion-content>

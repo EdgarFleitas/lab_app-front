@@ -1,0 +1,27 @@
+<ion-header>
+
+  <ion-toolbar color="dark">
+    <ion-buttons slot="start">
+      <ion-menu-button autoHide="false"></ion-menu-button>
+  
+    </ion-buttons>
+    
+    <ion-title>Mi cuenta</ion-title>
+  </ion-toolbar>
+
+</ion-header>
+
+<ion-content>
+
+  <ion-item>
+    <ion-thumbnail slot="start">
+      <img src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAAAAACH5BAAAAAAALAAAAAABAAEAAAICTAEAOw==">
+    </ion-thumbnail>
+    <ion-label>
+      <h2>Edgar Fleitas</h2>
+      <p>edgarxf@hotmail.com</p>
+    </ion-label>
+    <ion-button fill="outline" slot="end" [routerLink]="['/actualizar-cuenta']">Editar</ion-button>
+  </ion-item>
+  
+  </ion-content>

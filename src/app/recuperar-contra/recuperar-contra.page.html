@@ -1,0 +1,44 @@
+<ion-header>
+
+  <ion-toolbar color="dark">
+
+
+    <ion-title>Recuperar contraseña</ion-title>
+  </ion-toolbar>
+
+</ion-header>
+
+<ion-content>
+
+  &nbsp;
+  
+  <ion-toolbar>
+    <ion-input class="ion-text-center">Ingrese su correo electronico para reestablecer su contraseña</ion-input>
+  </ion-toolbar>
+
+  &nbsp;
+
+  <ion-item>
+    <ion-label position="floating">Correo</ion-label>
+    <ion-input></ion-input>
+  </ion-item>
+
+  &nbsp;
+
+  <ion-button expand="block">ENVIAR</ion-button>
+
+  <ion-toolbar>
+    <ion-buttons slot="start">
+      <ion-button color="danger" [routerLink]="['/registro-usuario']">
+        Crear cuenta
+      </ion-button>
+    </ion-buttons>
+    <ion-buttons slot="primary">
+      <ion-button [routerLink]="['/login']">
+        Iniciar sesion
+      </ion-button>
+    </ion-buttons>
+    
+  </ion-toolbar>
+
+</ion-content>

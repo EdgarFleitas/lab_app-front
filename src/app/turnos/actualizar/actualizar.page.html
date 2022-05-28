@@ -1,0 +1,45 @@
+<ion-header>
+
+  <ion-toolbar color="dark">
+    <ion-buttons slot="start">
+      <ion-menu-button autoHide="false"></ion-menu-button>
+  
+    </ion-buttons>
+    
+    <ion-title>Actualizar</ion-title>
+  </ion-toolbar>
+   
+</ion-header>
+
+<ion-content>
+  <form [formGroup]="actualizarTurnoForm" (ngSubmit)="actualizarForm()">
+    <ion-card>
+      <ion-item>
+        <ion-label>Fecha:</ion-label>
+        <ion-input
+          type="Date"
+          formControlName="turnos_fecha"
+          value="{{this.turnos_fecha}}"
+        ></ion-input>
+      </ion-item>
+      <ion-item>
+        <ion-label>Hora:</ion-label>
+        <ion-input
+          type="Time"
+          formControlName="turnos_hora"
+          value="{{this.turnos_hora}}"
+        ></ion-input>
+      </ion-item>
+      <ion-item>
+        <ion-label>Laboratorio:</ion-label>
+        <ion-input
+          type="number"
+          formControlName="turnos_lab"
+          value="{{this.turnos_lab}}"
+        ></ion-input>
+      </ion-item>
+      
+      <ion-button expand="block" type="submit" [routerLink]="['/turnos/']">Actualizar</ion-button>
+    </ion-card>
+  </form>
+</ion-content>

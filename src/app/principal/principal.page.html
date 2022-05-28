@@ -1,0 +1,44 @@
+<ion-header>
+
+  <ion-toolbar color="dark">
+    <ion-buttons slot="start">
+      <ion-menu-button autoHide="false"></ion-menu-button>
+  
+    </ion-buttons>
+    
+    <ion-title>Pagina principal</ion-title>
+  </ion-toolbar>
+
+  <ion-toolbar>
+    <ion-title>Bienvenidos!</ion-title>
+  </ion-toolbar>
+
+  <br>
+
+  <ion-img src="assets\icon\LabApp.jpeg"></ion-img>
+
+  <br>
+  <!-- <ion-button expand="block" [routerLink]="['/contactanos']">CONTACTANOS</ion-button> -->
+</ion-header>
+
+<ion-content>
+
+  <!-- fab placed in the center of the content with a list on each side -->
+  <ion-fab vertical="center" horizontal="center" slot="fixed">
+    <ion-fab-button>
+      <ion-icon name="call-outline"></ion-icon>
+    </ion-fab-button>
+    <ion-fab-list side="top">
+      <ion-fab-button><ion-icon name="logo-whatsapp"></ion-icon></ion-fab-button>
+    </ion-fab-list>
+    <ion-fab-list side="bottom">
+      <ion-fab-button><ion-icon name="logo-facebook"></ion-icon></ion-fab-button>
+    </ion-fab-list>
+    <ion-fab-list side="start">
+      <ion-fab-button><ion-icon name="logo-instagram"></ion-icon></ion-fab-button>
+    </ion-fab-list>
+    <ion-fab-list side="end">
+      <ion-fab-button><ion-icon name="logo-twitter"></ion-icon></ion-fab-button>
+    </ion-fab-list>
+  </ion-fab>
+</ion-content>
