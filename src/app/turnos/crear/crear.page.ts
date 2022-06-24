@@ -19,7 +19,7 @@ export class CrearPage implements OnInit {
     this.registroForm = this.formsBuilder.group({
       turnos_fecha: [''],
       turnos_hora: [''],
-      turnos_laboratorio: ['']
+      turnos_lab: ['']
     });
   }
 

@@ -46,8 +46,10 @@ export class TurnosPage implements OnInit {
     if(valor && valor.trim().length>0){
       this.registroService.buscarTurno(valor)
       .subscribe(data => {
+        console.log("entra")
         console.log(data);
         if(data){
+          console.log("1entra")
           this.users = data['turnos'];
         }else{
           this.users = [];
@@ -56,7 +58,9 @@ export class TurnosPage implements OnInit {
     }
 
     else{
+      console.log("ene234tra")
       this.registroService.listarTurno().subscribe(data=>{
+        console.log("entra11")
         if(data){
           this.users = data['turnos'];
         }else{

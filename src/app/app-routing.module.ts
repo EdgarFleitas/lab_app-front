@@ -50,6 +50,10 @@ const routes: Routes = [
     path: 'turnos',
     loadChildren: () => import('./turnos/turnos.module').then( m => m.TurnosPageModule)
   },
+  {
+    path: 'turnos/crear',
+    loadChildren: () => import('./turnos/crear/crear.module').then( m => m.CrearPageModule)
+  },
 ];
 @NgModule({
   imports: [

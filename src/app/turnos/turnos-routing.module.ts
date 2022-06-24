@@ -13,7 +13,7 @@ const routes: Routes = [
     loadChildren: () => import('./actualizar/actualizar.module').then( m => m.ActualizarPageModule)
   },
   {
-    path: 'crear',
+    path: 'turnos/crear',
     loadChildren: () => import('./crear/crear.module').then( m => m.CrearPageModule)
   },
   {

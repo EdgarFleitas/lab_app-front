@@ -40,9 +40,9 @@
               class="sc-ion-label-ios-h sc-ion-label-ios-s ios hydrated"
             >
               <h2>{{turnos.lab_nombre}}</h2>
-              <h2>{{turnos.turnos_fecha}}</h2>
-              <h3>{{turnos.turnos_hora}}</h3>
-              <p>{{turnos.turnos_lab}}</p>
+              <h2>Fecha: {{turnos.turnos_fecha}}</h2>
+              <h3>Hora: {{turnos.turnos_hora}}</h3>
+              <!-- <p>{{turnos.turnos_lab}}</p> -->
             </ion-label>
           </ion-item>
         </ion-item>
@@ -69,7 +69,7 @@
 
   <ion-fab
 
-    [routerLink]="['/turnos/crear']"
+    [routerLink]="['turnos/crear']"
     vertical="bottom"
     horizontal="end"
     slot="fixed"

@@ -9,7 +9,6 @@ import { ListarTurnoPageRoutingModule } from './listar-routing.module';
 import { ListarTurnoPage } from './listar.page';
 import { HttpClientModule } from '@angular/common/http';
 
-
 @NgModule({
   imports: [
     CommonModule,

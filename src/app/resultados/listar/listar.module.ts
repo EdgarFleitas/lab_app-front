@@ -17,6 +17,7 @@ import { HttpClientModule } from '@angular/common/http';
     ListarResultadoPageRoutingModule,
     ReactiveFormsModule,
     HttpClientModule 
+  
   ],
   declarations: [ListarResultadoPage]
 })
